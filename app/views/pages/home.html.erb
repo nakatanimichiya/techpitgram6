@@ -1,0 +1,7 @@
+<%# <%= link_to '表示したい文字', パス, メソッド %>
+<%# destroy_user_session DELETE /users/sign_out(.:format) devise/sessions#destroy %>
+<% if user_signed_in? %>
+  <%= link_to "サインアウト", destroy_user_session_path, method: :delete %>
+<% end %>
+<p>このページは仮のトップページです。</p>
+<%= link_to "仮のボタンです", "#", class: "btn btn-primary" %>
